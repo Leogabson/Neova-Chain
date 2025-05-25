@@ -1,0 +1,455 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 1.25rem 2.5rem;
+  background-color: #0d1117;
+  border-bottom: 1px solid #2c2f36;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 10s;
+}
+
+.nav-links a:hover {
+  color: #60a5fa;
+}
+
+.nav-buttons .btn-primary,
+.nav-buttons .btn-secondary {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 2.5rem;
+  padding: 0.25rem;
+  text-decoration-line: none;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  color: #0d1117;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  color: #cbd5e1;
+}
+
+.btnn-primary {
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 2.5rem;
+  padding: 0.25rem;
+  text-decoration-line: none;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 80px 20px;
+  background-color: #111827;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.how-it-works p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Features Grid */
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: #1f2937;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  transition: transform 5s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+/* Team Section */
+
+/* .meet-h2 { 
+  font-family: sans-serif;
+} */
+
+.team-section {
+  background-color: #0f172a;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.team-card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+}
+
+.team-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+/* Team Section */
+.team-section {
+  background-color: #0f172a;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.team-card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+}
+
+.team-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+/* Roadmap Section */
+.roadmap-section {
+  background-color: #111827;
+  padding: 5rem 1.25rem;
+  text-align: center;
+}
+
+.roadmap-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.roadmap-list {
+  list-style: none;
+  max-width: 43.75rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.roadmap-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 1.875rem;
+  text-align: left;
+}
+
+.roadmap-list .icon {
+  font-size: 1.5rem;
+}
+
+.roadmap-list strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.roadmap-list p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #0f172a;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #cbd5e1;
+}
+
+/* Hamburger Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-links,
+  .nav-buttons {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+.nav-links.active {
+  .nav-buttons.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2937;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .nav-buttons {
+    margin-top: 10px;
+  }
+}
+
+/* Page Hero */
+.page-hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+}
+
+/* About Section */
+.about-section {
+  background-color: #1e293b;
+  color: #f8fafc;
+  padding: 60px 20px;
+}
+
+.about-section h2 {
+  font-size: 1.75rem;
+  margin: 30px 0 10px;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #e2e8f0;
+}
+
+.about-section ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: #d1d5db;
+}
+
+.about-section li {
+  margin-bottom: 10px;
+}
+
+.see-more-about {
+  margin-top: 10px;
+  color: red;
+  scroll-behavior: smooth;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.product-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-hero p {
+  font-size: 1.125rem;
+  color: #cbd5e1;
+}
+
+/* Product Features Section */
+.product-section {
+  background-color: #1e293b;
+  padding: 5rem 1.5rem;
+  color: #e2e8f0;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2rem;
+}
+
+.product-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
